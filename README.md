@@ -32,7 +32,7 @@ git clone https://github.com/lazasof/H.E.D.N.O_auto_script.git
 
 **Run the Script:**  
 ```bash
-python hednoscript.py  
+python HEDNOscript.py  
 ```
 <br>
 
@@ -55,7 +55,7 @@ The resulting processed data will be stored in a new Excel file for further anal
   
 **Example:**
 ```bash
-$ python hedno_excel_processing.py
+$ python HEDNOscript.py
 
 Enter the path to the HEDNO Excel file: /path/to/your/file.xlsx
 Enter row numbers to include (e.g., 2, 5, 8): 2 5 8
