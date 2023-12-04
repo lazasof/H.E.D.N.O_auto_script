@@ -22,14 +22,14 @@ git clone https://github.com/your/repository.git
 ```
 <br>
 **Install Dependencies:**
-```
+```bash
 !pip install pandas 
 !pip install openpyxl
 !pip install pyinstaller 
 ```
 <br>
 **Run the Script:**  
-```python
+```bash
 python hednoscript.py  
 ```
 <br>
@@ -48,7 +48,7 @@ The resulting processed data will be stored in a new Excel file for further anal
   <br>
 **Example:**
 
-```
+```bash
 $ python hedno_excel_processing.py
 
 Enter the path to the HEDNO Excel file: /path/to/your/file.xlsx
