@@ -18,7 +18,7 @@ pyinstaller(is used to bake the script and make it usable without Python)<br>
 **Clone the Repository:**  <br>
   <br>
 ```bash
-git clone https://github.com/your/repository.git
+git clone https://github.com/lazasof/H.E.D.N.O_auto_script.git
 ```
 <br>
 
@@ -58,11 +58,11 @@ The resulting processed data will be stored in a new Excel file for further anal
 $ python hedno_excel_processing.py
 
 Enter the path to the HEDNO Excel file: /path/to/your/file.xlsx
-Enter row numbers to include (e.g., 2, 5, 8-10): 2, 4-7
+Enter row numbers to include (e.g., 2, 5, 8): 2 5 8
 
 Processing...
 
-Resultant dataset saved as 'combined_sheets.xlsx'
+Result dataset saved as 'combined_sheets.xlsx'
 ```
 <br>
 
