@@ -19,33 +19,32 @@ Usage
 Clone the Repository:
 
 ```bash
-Copy code
 git clone https://github.com/your/repository.git
 ```
-Install Dependencies:
-
-Copy code
-pip install pandas openpyxl
+```Install Dependencies:
+!pip install pandas 
+!pip install openpyxl
+!pip install pyinstaller 
+```
 Run the Script:
-
-Copy code
-python hedno_excel_processing.py
+```python
+python hednoscript.py
+```
 Instructions
 Input Excel File:
 Provide the path to the HEDNO Excel file when prompted.
 
 Row Selection:
-Enter the row numbers you want to include in the concatenated dataset. For instance: 2, 5, 8-10 to include rows 2, 5, 8, 9, and 10.
+Enter the row numbers you want to include in the concatenated dataset with space as delimiter. For instance: 2 5 8 to include rows 2, 5, 8.
 
 Processing:
-The script will remove the first sheet, process the specified rows, and concatenate all remaining sheets into a single dataset.
+The script will remove the first sheet,check for mistakes and special cases(eg. inputing -1 brings back all fields), process the specified rows, and concatenate all remaining sheets into a single dataset.
 
 Output:
 The resulting processed data will be stored in a new Excel file for further analysis.
 
 Example
-vbnet
-Copy code
+```python
 $ python hedno_excel_processing.py
 
 Enter the path to the HEDNO Excel file: /path/to/your/file.xlsx
@@ -53,7 +52,8 @@ Enter row numbers to include (e.g., 2, 5, 8-10): 2, 4-7
 
 Processing...
 
-Resultant dataset saved as 'processed_hedno_data.xlsx'
+Resultant dataset saved as 'combined_sheets.xlsx'
+```
 Notes
 Ensure the specified row numbers are within the range of each sheet in the Excel file.
 Make sure the Excel file follows the HEDNO format for proper processing.
