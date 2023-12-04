@@ -15,39 +15,45 @@ Pandas library<br>
 OpenPyXL library<br>
 pyinstaller(is used to bake the script and make it usable without Python)<br>
   <br>
-**Clone the Repository:**<br>
+**Clone the Repository:**  <br>
   <br>
 ```bash
 git clone https://github.com/your/repository.git
 ```
 <br>
-**Install Dependencies:**
+
+**Install Dependencies:**    
 ```bash
 !pip install pandas 
 !pip install openpyxl
 !pip install pyinstaller 
 ```
 <br>
+
 **Run the Script:**  
 ```bash
 python hednoscript.py  
 ```
 <br>
+
 **Instructions**
 **Input Excel File:**
 Provide the path to the HEDNO Excel file when prompted.  
   <br>
+  
 **Row Selection:**  <br>
 Enter the row numbers you want to include in the concatenated dataset with space as delimiter. For instance: 2 5 8 to include rows 2, 5, 8.<br>  
  <br>   
-**Processing:**<br>  
+ 
+**Processing:** <br>  
 The script will remove the first sheet,check for mistakes and special cases(eg. inputing -1 brings back all fields), process the specified rows, and concatenate all remaining sheets into a single dataset.<br>
   <br>
-**Output:**<br>
+  
+**Output:** <br>
 The resulting processed data will be stored in a new Excel file for further analysis.<br>
   <br>
+  
 **Example:**
-
 ```bash
 $ python hedno_excel_processing.py
 
@@ -59,6 +65,7 @@ Processing...
 Resultant dataset saved as 'combined_sheets.xlsx'
 ```
 <br>
+
 **Notes:**  <br>
 Ensure the specified row numbers are within the range of each sheet in the Excel file.  <br>
 Make sure the Excel file follows the HEDNO format for proper processing.  <br>
